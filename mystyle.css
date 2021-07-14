@@ -31,7 +31,7 @@ body {
 }
 
 
-.options {
+#options {
     width: 60vw;
     display: flex;
     justify-content: space-between;
@@ -39,7 +39,7 @@ body {
 }
 
 
-.options div {
+#options div {
     background-color: #8ee4af;
     padding: 20px 30px;
     border-style: solid;
@@ -47,9 +47,10 @@ body {
     border-color: #05386b;
     cursor: pointer;
     font-weight: bold;
+    border-radius: 5px;
 }
 
-.options div:hover {
+#options div:hover {
     transform: scale(1.1);
 }
 

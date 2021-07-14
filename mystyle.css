@@ -1,0 +1,61 @@
+* {
+    color: #05386b;
+    font-family: sans-serif;
+}
+
+.page-structure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#score-board {
+    font-size: 60px;
+    word-spacing: 30px;
+}
+
+h1 {
+    font-family: Impact;
+    color: #EDF5E1;
+    font-size: 70px;
+}
+
+
+h3 {
+    font-size: 30px;
+}
+
+
+body {
+    background-color: #5cdb95;
+}
+
+
+.options {
+    width: 60vw;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.options div {
+    background-color: #8ee4af;
+    padding: 20px 30px;
+    border-style: solid;
+    color: #05386b;
+    border-color: #05386b;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.options div:hover {
+    transform: scale(1.1);
+}
+
+#result-text {
+    padding-top: 50px;
+    justify-self: flex-end;
+    font-size: 40px;
+    font-family: monospace;
+}

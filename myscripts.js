@@ -66,5 +66,3 @@ function main() {
         i++
     }
 }
-
-main()

@@ -60,3 +60,19 @@ body {
     font-size: 40px;
     font-family: monospace;
 }
+
+/* questionable stategy */
+#restart {
+    background-color: #8ee4af;
+    padding: 20px 30px;
+    border-style: solid;
+    color: #05386b;
+    border-color: #05386b;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#restart:hover {
+    transform: scale(1.1);
+}

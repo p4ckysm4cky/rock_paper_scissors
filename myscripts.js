@@ -63,12 +63,13 @@ function game(playerInput) {
                 change_score("lose")
             }
         }
+        if (playerScore === 5) {
+            endScreen("win");
+        } else if (computerScore === 5) {
+            endScreen("lose");
+        }
     }
-    if (playerScore === 5) {
-        endScreen("win");
-    } else if (computerScore === 5) {
-        endScreen("lose");
-    }
+    
 }
 function change_score(result) {
     const scoreBoard = document.getElementById("score-board");
@@ -103,6 +104,23 @@ function endScreen(result) {
             break;        
     }
     roundEnded = true;
+    const pageStructure = document.getElementsByClassName("page-structure")[0]
+    const restartBtn = document.createElement("div")
+    restartBtn.textContent = "Play Again"
+    restartBtn.id = "restart"
+    restartBtn.addEventListener("click", function(e) {
+        console.log("testing")
+        playerScore = 0
+        computerScore = 0
+        roundEnded = false
+        const resultText = document.getElementById("result-text");
+        resultText.innerHTML = ""
+        const scoreBoard = document.getElementById("score-board");
+        scoreBoard.innerHTML = `${playerScore} - ${computerScore}`
+        restartBtn.remove()
+    })
+    pageStructure.appendChild(restartBtn)
+    
         
 }
 
